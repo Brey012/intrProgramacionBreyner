@@ -66,11 +66,63 @@ body {
 .header__menu__enlace:hover::before {
   width: 100%;
   transition: ease-in-out all 0.5s;
-  background-color:#75ffb7;
+  background-color: #75ffb7;
 }
 
 .header__menu__enlace:hover::after {
-    width: 100%;
-    transition: ease-in-out all 0.8s;
-    background-color: #33f590;
-  }
+  width: 100%;
+  transition: ease-in-out all 0.8s;
+  background-color: #33f590;
+}
+
+.content {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/views/public/img/bgform.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content__form {
+  height: 40%;
+  width: 40%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid white;
+  box-shadow: 12px white;
+}
+.content__form button {
+  width: 70%;
+  height: 40%;
+  background-color: #33f590;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.content__form button::before {
+  position: absolute;
+  width: 100%;
+  content: '';
+  transition: ease-in-out all 0.5s;
+  z-index: -1;
+  height: 0%;
+  top: 0;
+  left: 0;
+}
+
+.content__form button:hover::before {
+  height: 100%;
+  transition: ease-in-out all 0.5s;
+  border-radius: 20px;
+  background-color: #126945;
+}
