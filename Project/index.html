@@ -7,6 +7,59 @@
     <title>Practica</title>
   </head>
   <body>
+
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="signup">
+        <form id="signup">
+          <label for="chk" aria-hidden="true">Registro</label>
+          <input type="text" name="user" placeholder="User name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="pswd" placeholder="Password" />
+          <input type="edad" name="age" placeholder="Edad" />
+          <select name="" id="gender">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="O">Otro</option>
+          </select>
+
+          <button type="button">Registrarme</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form id="login">
+          <label for="chk" aria-hidden="true">Iniciar Sesión</label>
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <button>Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- <section id="register">
+      <div class="contenedor-register">
+        <p class="register-titulo">Registro</p>
+        <form action="" class="register-form">
+          <input type="text" placeholder="Usuario" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Contraseña" />
+          <input type="text" placeholder="Edad" />
+          <select name="genero" id="">
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+          </select>
+          <button>Registrarse</button>
+        </form>
+      </div>
+    </section>
+    
     <section id="login">
       <div class="contenedor-login">
         <p class="login-titulo">Iniciar Sesión</p>
@@ -17,25 +70,6 @@
         </form>
       </div>
     </section>
-
-    <section id="register">
-      <div class="contenedor-register">
-        <p class="register-titulo">Registro</p>
-        <form action="" class="register-form">
-          <input type="text" placeholder="Usuario" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="text" placeholder="Edad" />
-          <select name="genero" id="">
-            <option value="">Masculino</option>
-            <option value="">35 tipos de gei</option>
-            <option value="">Femenino</option>
-        </select>
-        <button>Registrarse</button>
-        </form>
-      </div>
-    </section>
-
-    <script type="module" src="./project.js"></script>
+    <script type="module" src="./project.js"></script> -->
   </body>
 </html>

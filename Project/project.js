@@ -1,14 +1,16 @@
-let login = document.querySelector(".login-titulo")
-
+let login = document.querySelector(".login-titulo");
 let register = document.querySelector(".register-titulo");
 
-register.addEventListener("click", () => {
-  document.querySelector(".contenedor-login").style.display = "flex";
-  document.querySelector(".contenedor-register").style.display = "none";
-});
+if (login) {
+  login.addEventListener("click", () => {
+    document.getElementById("login").style.display = "flex";
+    document.getElementById("register").style.display = "none";
+  });
+}
 
-login.addEventListener("click", () => {
-    document.querySelector(".contenedor-login").style.display = "flex";
-    document.querySelector(".contenedor-register").style.backGraundColor = "none";
-
-});
+if (register) {
+  register.addEventListener("click", () => {
+    document.getElementById("register").style.display = "none";
+    document.getElementById("login").style.display = "flex";
+  });
+}
